@@ -1,6 +1,6 @@
 body{
     color: white;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 .list-cabecario ul{
     display: flex;
@@ -8,11 +8,13 @@ body{
     list-style-type: none;
     align-items: center;
     padding: 16px;
+    
 }
 a{
     color: white;
     text-decoration: none;
 }
+
 
 header img{
     width: 150px;
@@ -20,6 +22,12 @@ header img{
     border-radius: 50%;
     align-items: center;
     border: 5px solid aqua;
+}
+.imgProjetos{
+    width: 395px;
+    height: 250px;
+    align-items: center;
+    border: 5px solid rgb(255, 255, 255);
 }
 .center{
    text-align:  center;
@@ -45,10 +53,9 @@ footer p {
 
 }
 .conteiner{
-    padding: 0px 50px;
-      
+    padding: 0px 50px;    
 }
-nav a:hover{
+ a:hover{
     color: aqua;
 }
 .contact-form input{
@@ -65,3 +72,14 @@ button{
     width: 100px;
     height: 30px;
 }
+.imagemAlinhadas {
+    display: flex; /* Define o container como um flex container */
+    flex-wrap: wrap; /* Permite que as imagens se quebrem para a próxima linha se necessário */
+    width: 100%; /* Largura do container */
+    text-align: center;
+}
+.imagem {
+    width: 50%; /* Largura de cada imagem (50% da container) */
+    object-fit: cover; /* Mantém a proporção e cobre a área do container */
+}
+
