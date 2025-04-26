@@ -50,7 +50,6 @@ footer a {
 }
 footer p {
     margin: 10px;
-
 }
 .conteiner{
     padding: 0px 50px;    
@@ -65,6 +64,14 @@ footer p {
 }
 .contact-form input[type="text"]{
     height: 100px;
+}
+.contact-form textarea{
+    width: 100%;
+    padding: 8px 0;
+    margin: 8px 0;
+    height: 150px;
+    caret-color: blue;
+    padding-left: 2px;
 }
 button{
     background-color: white;
