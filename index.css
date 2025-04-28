@@ -1,22 +1,43 @@
 body{
-    color: white;
-    background-color: rgb(0, 0, 0);
-}
-.list-cabecario ul{
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    align-items: center;
-    padding: 16px;
-    
+    color:black;
+    background-color: rebeccapurple;
+    margin: 0px 0px 0px 250px;
 }
 a{
-    color: white;
     text-decoration: none;
+    color: black;
+}
+header{
+    background-color: blue;
+    padding: 10px;
+}
+.btn-abrir{
+    color: white;
+    font-size: 25px;
+}
+nav{
+    height: 100%;
+    width: 250px;
+    background-color: blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+nav a{
+    color: white;
+    font-size: 25px;
+    display: block;
+    padding: 12px 10px 12px 32px;
 }
 
+nav a:hover {
+    color: blue;
+    background-color: white;
+}
 
-header img{
+main img{
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -24,8 +45,9 @@ header img{
     border: 5px solid aqua;
 }
 .imgProjetos{
-    width: 395px;
+    width: 460px;
     height: 250px;
+    margin: 0 10px;
     align-items: center;
     border: 5px solid rgb(255, 255, 255);
 }
@@ -33,7 +55,7 @@ header img{
    text-align:  center;
 }
 h1{
-    color: aqua;
+    color: black;
 }
 footer img{
     width: 40px;
@@ -61,17 +83,15 @@ footer p {
     width: 100%;
     padding: 8px 0;
     margin: 8px 0;
-}
-.contact-form input[type="text"]{
-    height: 100px;
+    padding-left: 3px;
 }
 .contact-form textarea{
     width: 100%;
     padding: 8px 0;
     margin: 8px 0;
     height: 150px;
-    caret-color: blue;
-    padding-left: 2px;
+    caret-color: black;
+    padding-left: 3px;
 }
 button{
     background-color: white;

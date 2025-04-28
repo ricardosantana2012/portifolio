@@ -7,43 +7,26 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="conteiner">
+        <header>
+            <a href="#" class="btn-abrir">&#9776; Abrir</a>
+        </header>
         <div class="conteiner">
-            <nav class="list-cabecario">
-                <ul>
-                    <li>
-                        <a href="index.html">Sobre mim</a>
-                    </li>
-                    <li>
-                        <a href="projetos.html">
-                            Projetos
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contato.html">
-                            Contato
-                        </a>
-                    </li>
-                    <li>
-                        <a href="certificados.html">
-                            Certificados
-                        </a>
-                    </li>
-                </ul>
+            <nav>          
+                        <a href="index.html">Sobre mim</a>              
+                        <a href="projetos.html">Projetos </a>
+                        <a href="contato.html">Contato</a>
+                        <a href="certificados.html">Certificados</a>
             </nav>
-            <header class="center">
-               <div >
-                    <img src="./img/ricardo.png"></img>
-               </div>
-               <h1>Contato</h1>
+            <main class="center">
+               <h1>CONTATO</h1>
                <h2>Envie sua mensagem</h2>
-            </header>
+            </main>
         
         <form class="contact-form" action="https://formsubmit.co/e249f7bc39a8785994450e9ea54acb87" method="POST">
             <label for="email">Email</label>
             <input type="email" name="email" id="email" required>
             <label for="mensage">Mensagem</label>
-            <input type="text" name="message" id="message" required>
+            <textarea type="text" name="message" id="message" required></textarea>
             <input type="hidden" name="_next" value="https://ricardosantana2012.github.io/portifolio/thanks.html">
             <button type="submit">Enviar</button>
         </form>
