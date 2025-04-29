@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <a href="#" class="btn-abrir">&#9776; Abrir</a>
-    </header>
-    <div class="conteiner">
-        <nav>          
-                    <a href="index.html">Sobre mim</a>              
-                    <a href="projetos.html">Projetos </a>
-                    <a href="contato.html">Contato</a>
-                    <a href="certificados.html">Certificados</a>
-        </nav>
+        <header>
+            <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776; Abrir</a>
+        </header>
+        <div class="conteiner">
+            <nav id="menu">     
+                        <a href="#" onclick="fecharMenu()">&times; Fechar</a>        
+                        <a href="index.html">Sobre mim</a>              
+                        <a href="projetos.html">Projetos </a>
+                        <a href="contato.html">Contato</a>
+                        <a href="certificados.html">Certificados</a>
+            </nav>
         <main class="center">
            <h1>Obrigado pelo contato!</h1>
            <h2>Retornaremos em breve!</h2>
@@ -37,5 +38,13 @@
            </a>
         </footer>
         </div>
+        <script>
+            function abrirMenu(){
+                document.getElementById('menu').style.width = '250px';
+            }
+            function fecharMenu(){
+                document.getElementById('menu').style.width  = '0px';
+            }
+        </script>        
 </body>
 </html>

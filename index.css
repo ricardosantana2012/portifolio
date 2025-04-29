@@ -1,7 +1,8 @@
 body{
     color:black;
-    background-color: rebeccapurple;
-    margin: 0px 0px 0px 250px;
+    margin: 0px 0px 0px 0px;
+    background: #22C1C3;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(255, 255, 255, 1) 20%);
 }
 a{
     text-decoration: none;
@@ -11,19 +12,24 @@ header{
     background-color: blue;
     padding: 10px;
 }
+main{
+    padding: 10px;
+    transition: magin-left 0.5s;
+}
 .btn-abrir{
     color: white;
     font-size: 25px;
 }
 nav{
     height: 100%;
-    width: 250px;
+    width: 0px;
     background-color: blue;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
     overflow: hidden;
+    transition: width 0.3s;
 }
 nav a{
     color: white;
@@ -42,14 +48,14 @@ main img{
     height: 150px;
     border-radius: 50%;
     align-items: center;
-    border: 5px solid aqua;
+    border: 5px solid rgb(0, 0, 0);
 }
 .imgProjetos{
     width: 460px;
     height: 250px;
     margin: 0 10px;
     align-items: center;
-    border: 5px solid rgb(255, 255, 255);
+    border: 5px solid rgb(0, 0, 0);
 }
 .center{
    text-align:  center;
@@ -77,7 +83,7 @@ footer p {
     padding: 0px 50px;    
 }
  a:hover{
-    color: aqua;
+    color: rgb(255, 0, 0);
 }
 .contact-form input{
     width: 100%;
@@ -86,7 +92,7 @@ footer p {
     padding-left: 3px;
 }
 .contact-form textarea{
-    width: 100%;
+    width:100%;
     padding: 8px 0;
     margin: 8px 0;
     height: 150px;
@@ -94,8 +100,7 @@ footer p {
     padding-left: 3px;
 }
 button{
-    background-color: white;
-    border: none;
+    background-color: rgba(148, 148, 148, 0.979);
     width: 100px;
     height: 30px;
 }
@@ -109,4 +114,3 @@ button{
     width: 50%; /* Largura de cada imagem (50% da container) */
     object-fit: cover; /* Mantém a proporção e cobre a área do container */
 }
-

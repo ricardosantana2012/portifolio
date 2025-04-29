@@ -8,10 +8,11 @@
 </head>
 <body>
         <header>
-            <a href="#" class="btn-abrir">&#9776; Abrir</a>
+            <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776; Abrir</a>
         </header>
         <div class="conteiner">
-            <nav>          
+            <nav id="menu">     
+                        <a href="#" onclick="fecharMenu()">&times; Fechar</a>        
                         <a href="index.html">Sobre mim</a>              
                         <a href="projetos.html">Projetos </a>
                         <a href="contato.html">Contato</a>
@@ -54,6 +55,13 @@
            </a>
         </footer>
     </div>  
-    
+    <script>
+        function abrirMenu(){
+            document.getElementById('menu').style.width = '250px';
+        }
+        function fecharMenu(){
+            document.getElementById('menu').style.width  = '0px';
+        }
+    </script>    
 </body>
 </html>

@@ -23,12 +23,14 @@
         }
         nav{
             height: 100%;
-            width: 250px;
+            width: 0px;
             background-color: blue;
             position: fixed;
             top: 0;
             left: 0;
             z-index: 1;
+            overflow: hidden;
+            transition: width 0.3s;
         }
         nav a{
             color: white;
@@ -41,14 +43,18 @@
             color: blue;
             background-color: white;
         }
+        main{
+            padding: 10px;
+            transition: magin-left 0.5s;
+        }
     </style>
 </head>
 <body>
     <header>
-        <a href="#" class="btn-abrir">&#9776; Abrir</a>
+        <a href="#" class="btn-abrir" onclick="abriMenu()">&#9776;  Abrir</a>
     </header>
-    <nav>
-        <a href="#">&times; Fechar</a>
+    <nav id="menu">
+        <a href="#" onclick="fecharMEnu()">&times; Fechar</a>
         <a href="#">Home</a>
         <a href="#">Sobre</a>
         <a href="#">Contato</a>
@@ -57,5 +63,15 @@
     <main>
         <h1>Exemplo de conteudo</h1>
     </main>
+    <script>
+        function abriMenu(){
+            document.getElementById('menu').style.width = '250px';
+        }
+        function fecharMEnu(){
+            document.getElementById('menu').style.width  = '0px';
+        }
+
+
+    </script>
 </body>
 </html>
